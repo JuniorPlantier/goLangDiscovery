@@ -95,11 +95,11 @@ func main() {
 	fmt.Printf("• Data completa: %02d de %s de %d\n", dia, mesesPT[mes], ano)
 	fmt.Printf("• Dia da semana: %s\n", diasSemanaPT[diaSemana])
 	fmt.Printf("• Trimestre: %dº Trimestre\n", trimestre)
-	
+
 	if bissexto {
-		fmt.Println("• Ano bissexto? Sim! 🟢")
+		fmt.Println("• Ano bissexto? Sim!")
 	} else {
-		fmt.Println("• Ano bissexto? Não. 🔴")
+		fmt.Println("• Ano bissexto? Não.")
 	}
 
 	fmt.Printf("• Posição no ano: %dº dia (restam %d dias para o fim do ano)\n", diaDoAno, diasRestantes)

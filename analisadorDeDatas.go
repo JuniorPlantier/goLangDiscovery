@@ -44,7 +44,7 @@ func main() {
 	layout := "02/01/2006"
 	data, err := time.Parse(layout, entrada)
 	if err != nil {
-		fmt.Printf("⚠️ Aviso: '%s' não é uma data válida ou não está no formato DD/MM/AAAA.\n", entrada)
+		fmt.Printf("Aviso: '%s' não é uma data válida ou não está no formato DD/MM/AAAA.\n", entrada)
 		return
 	}
 
@@ -106,7 +106,7 @@ func main() {
 
 	fmt.Println("\nRELAÇÃO COM HOJE:")
 	if diferencaDias == 0 {
-		fmt.Println("• Esta data é HOJE! 📍")
+		fmt.Println("• Esta data é HOJE!")
 	} else if diferencaDias > 0 {
 		fmt.Printf("• É uma data FUTURA (daqui a %d dias).\n", diferencaDias)
 	} else {

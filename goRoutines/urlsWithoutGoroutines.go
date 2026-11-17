@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-/* consulta cada um dos serviços sem utilizar concorrência */
+/* consulta cada um dos serviços sem utilizar goroutines/concorrência */
 func main() {
 
 	urls := []string{
@@ -20,7 +20,7 @@ func main() {
 
 	inicio := time.Now()
 
-	fmt.Printf("Iniciando chamandas...\n")
+	fmt.Println("Iniciando chamadas...")
 
 	for _, url := range urls {
 		verifyServiceStatus(url)
